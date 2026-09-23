@@ -5,7 +5,7 @@
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-concept-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=for-the-badge)
 ![Category](https://img.shields.io/badge/category-life%20coaching-4ecdc4?style=for-the-badge)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
@@ -400,6 +400,22 @@ The CoT-CoR framework is a methodology for organizing information and generating
 
 Custody Life Coach exists to help parents navigate custody arrangements, divorce, and family transitions with greater clarity, emotional resilience, and practical organization, combining parenting agreement intelligence, structured reasoning, communication support, and child-centered coaching. Its purpose is not to replace professional judgment or decide what a parent should fight for. It is to provide the information, structure, and tools that help parents make their own informed decisions while protecting their children's well-being and maintaining their personal dignity.
 
-## License
+## 📄 License & Model
 
-See [LICENSE](LICENSE).
+This project is **proprietary** and **All Rights Reserved**.
+
+- No portion of this repository (concept documentation, source code, prompts, frameworks, or associated materials) may be used, copied, modified, merged, published, distributed, sublicensed, hosted, or sold without prior written permission from the copyright holder.
+- This repository is published for portfolio and demonstration purposes only. It is not open source, and no license (MIT, Apache, GPL, or otherwise) is granted by publication or by forking/cloning.
+- The **Custody Life Coach** name, branding, and associated marks are claimed as trademarks of the copyright holder, whether or not registered, and are not covered by any license grant even if one is later added to this repository.
+- See [`LICENSE`](LICENSE) for full terms.
+
+---
+
+<div align="center">
+
+### **⭐ Star this repository if Custody Life Coach interested you!**
+
+[![GitHub Stars](https://img.shields.io/github/stars/shadowdevnotreal/custody-life-coach?style=social)](https://github.com/shadowdevnotreal/custody-life-coach/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/shadowdevnotreal/custody-life-coach?style=social)](https://github.com/shadowdevnotreal/custody-life-coach/network)
+
+</div>

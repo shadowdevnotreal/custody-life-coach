@@ -1,65 +1,88 @@
 # Custody Life Coach
 
-### AI-Powered Parenting Agreement Intelligence, Custody Preparation & Life Transition Support
+### AI-Powered Parenting Agreement Intelligence, Custody Preparation, and Life Transition Support
 
-A GitHub repository-style project overview, technical specification, and architecture guide for building an AI-powered custody and co-parenting support platform.
+<div align="center">
 
-## 1. Project Overview
+![Status](https://img.shields.io/badge/status-concept-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![Category](https://img.shields.io/badge/category-life%20coaching-4ecdc4?style=for-the-badge)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-Custody Life Coach is a specialized AI-powered support system designed to help parents navigate child custody arrangements, divorce, co-parenting disputes, parenting agreements, and major family transitions.
+</div>
 
-The project combines structured document analysis, contextual reasoning, emotional intelligence, conflict de-escalation, and practical planning into a unified assistant. Its primary objective is to help parents move from emotionally overwhelming situations toward informed decisions, organized documentation, effective communication, and sustainable parenting practices.
+A project overview, technical specification, and architecture guide for an AI-powered custody and co-parenting support platform.
 
-Unlike a general-purpose chatbot, Custody Life Coach is designed around the specific challenges parents face during custody proceedings and ongoing co-parenting relationships. It provides a structured environment in which users can review parenting agreements, identify important obligations, prepare communications, organize custody-related events, and develop strategies for managing difficult family situations.
+## Overview
 
-The system is guided by three foundational principles:
+Custody Life Coach is a specialized AI-powered support system that helps parents navigate child custody arrangements, divorce, co-parenting disputes, parenting agreements, and major family transitions.
 
-1. **Protect the child** — prioritize child safety, stability, emotional well-being, and healthy parental relationships.
-2. **Preserve parental dignity and agency** — help parents make informed decisions without encouraging retaliation, manipulation, or unnecessary conflict.
-3. **Build long-term stability** — convert complex agreements, emotional challenges, and family obligations into manageable actions that support sustainable co-parenting.
+It combines structured document analysis, contextual reasoning, emotional intelligence, conflict de-escalation, and practical planning into one assistant, helping parents move from emotionally overwhelming situations toward informed decisions, organized documentation, effective communication, and sustainable parenting practices.
 
-The project is not intended to replace legal counsel, mental health professionals, mediators, or judicial decision-making. Instead, it provides an AI-assisted preparation and organization layer that helps users engage with those professionals more effectively.
+Unlike a general-purpose chatbot, Custody Life Coach is built around the specific challenges of custody proceedings and ongoing co-parenting: reviewing agreements, identifying obligations, preparing communications, organizing custody-related events, and developing strategies for difficult family situations.
 
-## 2. The Problem This Project Solves
+Three principles guide the system:
 
-Custody disputes involve several interconnected challenges that traditional productivity tools and general-purpose AI assistants do not necessarily address together. A parent may simultaneously need to interpret a parenting agreement, understand a scheduling conflict, prepare an email to the other parent, document an incident, manage emotional stress, and prepare questions for their attorney.
+1. **Protect the child**: prioritize safety, stability, emotional well-being, and healthy parental relationships.
+2. **Preserve parental dignity and agency**: support informed decisions without encouraging retaliation, manipulation, or unnecessary conflict.
+3. **Build long-term stability**: turn complex agreements and family obligations into manageable, sustainable actions.
 
-These tasks are often handled separately, resulting in fragmented information, inconsistent documentation, missed obligations, and communication that may unintentionally escalate conflict.
+The project does not replace legal counsel, mental health professionals, mediators, or judicial decision-making. It provides an AI-assisted preparation and organization layer that helps users work with those professionals more effectively.
 
-For example, when one parent requests a last-minute modification to an upcoming custody exchange, the receiving parent may need to determine: What does the existing parenting agreement actually require? Does it permit changes to the regular schedule? Is advance notice required? How will the change affect the child? Should the incident be documented? Does the disagreement require mediation?
+## The Problem This Solves
 
-Custody Life Coach brings these considerations into one workflow — examining the available facts, referencing the applicable agreement, identifying uncertainties, and helping the user formulate a constructive next step, rather than an emotionally driven response.
+Custody disputes involve interconnected challenges that ordinary productivity tools and general-purpose AI assistants rarely address together. A parent may need to interpret a parenting agreement, understand a scheduling conflict, draft an email to the other parent, document an incident, manage stress, and prepare questions for an attorney, all in the same week.
 
-## 3. Core Platform Capabilities
+Handled separately, these tasks fragment information, produce inconsistent documentation, cause missed obligations, and can escalate conflict through poorly framed communication.
 
-- **Parenting Agreement Intelligence** — read and organize parenting agreements, identify important clauses, extract obligations, and produce plain-language explanations linked to their source sections.
-- **Co-Parent Communication Assistant** — draft neutral, child-focused communications concerning schedules, parenting decisions, expenses, disagreements, and requests for cooperation.
-- **Custody Scheduling & Obligation Tracking** — turn parenting schedules, notice periods, holidays, and recurring responsibilities into checklists and calendar-ready events.
-- **Documentation & Attorney Preparation** — organize incidents, communication histories, supporting records, unresolved questions, and factual timelines for professional review.
-- **Emotional Regulation & Life Coaching** — structured reflection, supportive coaching, emotional regulation exercises, and practical planning during difficult family transitions.
-- **Agreement Negotiation & Revision** — identify ambiguous provisions, prepare alternative language, document tradeoffs, and support collaborative agreement revisions.
+For example, when one parent requests a last-minute change to a custody exchange, the other parent needs to know: what the agreement actually requires, whether it allows the change, whether advance notice is needed, how the child is affected, and whether the disagreement needs mediation.
 
-## 4. System Architecture
+Custody Life Coach brings these considerations into one workflow, examining the facts, referencing the applicable agreement, flagging uncertainty, and helping the user reach a constructive next step instead of an emotionally driven response.
 
-Custody Life Coach can be understood as a layered AI system. The architecture below describes a proposed software implementation of the assistant's behavior — it is not a claim that all components already exist as independently deployed services.
+## Core Capabilities
 
+```mermaid
+mindmap
+  root((Custody Life Coach))
+    Parenting Agreement Intelligence
+      Clause extraction
+      Obligation tracking
+      Plain-language summaries
+    Co-Parent Communication
+      Neutral drafting
+      De-escalation review
+    Scheduling and Tracking
+      Custody calendars
+      Notice deadlines
+    Documentation
+      Incident logs
+      Attorney briefs
+    Emotional Coaching
+      Supportive, Realistic, Tough-Love modes
+    Negotiation Support
+      Clause revision
+      Dispute resolution
 ```
-User Interface        conversational input · file uploads · preferences · coaching modes
-        │
-Context & Document Layer   user-provided facts · parenting agreement · relevant history · extraction
-        │
-CoT–CoR Processing Engine  active listening · context analysis · evidence assessment · bias mitigation
-        │
-Custody Intelligence Modules   agreement analysis · communication · scheduling · emotional support
-        │
-Safety & Quality Control   source verification · privacy checks · child safety · human review
-        │
-Output Generation   agreement summaries · draft messages · checklists · calendars · incident logs
+
+## System Architecture
+
+The architecture below is a proposed software implementation of the assistant's behavior, not a claim that every component already exists as an independently deployed service.
+
+```mermaid
+flowchart TD
+    UI[User Interface\nconversational input, uploads,\npreferences, coaching modes]
+    CTX[Context and Document Layer\nuser facts, parenting agreement,\nhistory, extraction]
+    ENGINE[CoT-CoR Processing Engine\nactive listening, context analysis,\nevidence assessment, bias mitigation]
+    MOD[Custody Intelligence Modules\nagreement analysis, communication,\nscheduling, emotional support]
+    QC[Safety and Quality Control\nsource verification, privacy,\nchild safety, human review]
+    OUT[Output Generation\nsummaries, drafts, checklists,\ncalendars, incident logs]
+
+    UI --> CTX --> ENGINE --> MOD --> QC --> OUT
 ```
 
-A user may initiate a session through natural language, select a predefined workflow, or upload a relevant document. Typical interactions include: `Create custody coach`, `Analyze parenting agreement`, `Prepare message`, `Draft clause`, `Simulate conversation`, `Create custody schedule`, `Prepare attorney brief`.
+Typical interactions: `Create custody coach`, `Analyze parenting agreement`, `Prepare message`, `Draft clause`, `Simulate conversation`, `Create custody schedule`, `Prepare attorney brief`.
 
-Context is separated into three categories, which should never be conflated:
+Context is kept in three separate categories, never conflated:
 
 | Category | Description |
 |---|---|
@@ -67,44 +90,42 @@ Context is separated into three categories, which should never be conflated:
 | User-reported information | Events, circumstances, and concerns described by the user |
 | AI-generated analysis | Summaries, issue flags, interpretations, and suggested actions |
 
-A user's report of an event should not automatically be represented as an independently verified fact, and an AI-generated interpretation should not be presented as an official legal determination.
+A user's report of an event is not automatically treated as an independently verified fact, and an AI-generated interpretation is never presented as an official legal determination.
 
-## 5. The CoT–CoR Intelligence Framework
+## The CoT-CoR Intelligence Framework
 
-**Context-over-Reasoning (CoR)** — advice should be grounded in the parent's actual circumstances rather than generic assumptions. The system must distinguish between what it knows, what the user has reported, and what remains uncertain.
+**Context-over-Reasoning (CoR)**: advice is grounded in the parent's actual circumstances rather than generic assumptions. The system tracks what it knows, what the user reported, and what remains uncertain.
 
-**Chain-of-Trust (CoT)** — recommendations are evaluated against three questions: does this protect the child's well-being; does this preserve the parent's dignity and decision-making autonomy; does this support a stable, sustainable long-term parenting relationship? This is especially important in cases involving threats, coercive behavior, or credible safety concerns, where direct negotiation may not be appropriate.
+**Chain-of-Trust (CoT)**: every recommendation is checked against three questions. Does this protect the child's well-being? Does it preserve the parent's dignity and decision-making autonomy? Does it support a stable, sustainable long-term parenting relationship? This matters most in cases involving threats, coercive behavior, or credible safety concerns, where direct negotiation may not be appropriate.
 
-**Structured reasoning pipeline:**
-
-```
-Identify the user's actual request
-  → Retrieve relevant context
-  → Extract applicable agreement provisions
-  → Separate documented facts from allegations
-  → Identify missing or conflicting information
-  → Consider available response options
-  → Check for bias, safety, and escalation risks
-  → Generate a clear explanation and next steps
+```mermaid
+flowchart LR
+    A[Identify user's\nactual request] --> B[Retrieve relevant\ncontext]
+    B --> C[Extract agreement\nprovisions]
+    C --> D[Separate facts\nfrom allegations]
+    D --> E[Flag missing or\nconflicting info]
+    E --> F[Consider response\noptions]
+    F --> G[Check bias, safety,\nescalation risk]
+    G --> H[Generate explanation\nand next steps]
 ```
 
-**Bias mitigation** — the system should recognize that custody disputes often involve incomplete information and conflicting accounts:
+**Bias mitigation** guards against common reasoning failures in disputes with incomplete or conflicting information:
 
 | Reasoning risk | System response |
 |---|---|
-| Confirmation bias | Consider whether available evidence supports alternative explanations |
+| Confirmation bias | Consider whether evidence supports alternative explanations |
 | Hasty generalization | Avoid treating one event as proof of a recurring pattern |
 | Emotional framing | Separate observed actions from interpretations of intent |
-| False dichotomy | Identify additional options beyond immediate agreement or refusal |
+| False dichotomy | Identify options beyond immediate agreement or refusal |
 | Unsupported causation | Avoid assuming one event necessarily caused another |
 
-## 6. Parenting Agreement Intelligence Module
+## Parenting Agreement Intelligence
 
-Converts uploaded parenting agreements into structured information that can be searched, summarized, referenced, and used to generate practical workflows.
+This module converts uploaded parenting agreements into structured information that can be searched, summarized, and used to generate practical workflows.
 
-**Document ingestion** should accept PDF, DOCX, and plain text, extracting contents while preserving page numbers, section labels, and source text for each extracted obligation. For scanned documents, text recognition may be necessary, followed by verification of uncertain extracted text. The system should flag handwritten modifications, missing pages, illegible provisions, and conflicting copies.
+**Document ingestion** should accept PDF, DOCX, and plain text, extracting content while preserving page numbers, section labels, and source text for each obligation. Scanned documents may need text recognition followed by verification of uncertain text. The system should flag handwritten modifications, missing pages, illegible provisions, and conflicting copies.
 
-**Clause-based analysis** — findings are connected to specific sections. Example analysis object:
+**Clause-based analysis** connects findings to specific sections. Example:
 
 ```json
 {
@@ -125,15 +146,15 @@ Converts uploaded parenting agreements into structured information that can be s
 }
 ```
 
-`null` represents information that has not been provided; the system must not automatically replace missing values with assumed defaults, so a generic template is never mistaken for a finalized agreement with enforceable deadlines.
+`null` marks information that has not been provided. The system never substitutes an assumed default, so a generic template is never mistaken for a finalized agreement with enforceable deadlines.
 
-**Issue severity** is an organizational tool, not a judicial determination: **Low** (minor ambiguity or non-urgent clarification), **Medium** (may cause scheduling confusion or disputes), **High** (potential child-safety concern, imminent deadline, or significant unresolved issue).
+Issue severity is an organizational tool, not a judicial determination: **Low** (minor ambiguity, non-urgent clarification), **Medium** (may cause scheduling confusion or disputes), **High** (potential child-safety concern, imminent deadline, or significant unresolved issue).
 
-**Agreement review output** — a complete review generates: an executive summary; an overview of custody/decision-making provisions; a description of regular parenting time and holiday schedules; principal issues/ambiguities; a calendar of identifiable deadlines; a list of responsibilities per parent; draft alternatives for ambiguous provisions; and questions for attorney review.
+A complete agreement review generates an executive summary, an overview of custody and decision-making provisions, a description of regular parenting time and holidays, principal issues and ambiguities, a calendar of deadlines, a list of responsibilities per parent, draft alternatives for ambiguous provisions, and questions for attorney review.
 
-## 7. Custody Scheduling and Calendar Intelligence
+## Custody Scheduling and Calendar Intelligence
 
-Converts agreement terms into practical date-based obligations, distinguishing explicit agreement dates from dates calculated using assumptions. If required information is missing, the platform should identify the gap before generating a definitive event.
+Agreement terms are converted into practical, date-based obligations. Explicit agreement dates are kept distinct from dates calculated using assumptions, and missing information is flagged before a definitive event is generated.
 
 Example iCalendar output:
 
@@ -154,19 +175,26 @@ END:VEVENT
 END:VCALENDAR
 ```
 
-A production implementation should include explicit time-zone handling, properly formatted event properties, and user confirmation before calendar events are saved or shared.
+A production implementation needs explicit time-zone handling, properly formatted event properties, and user confirmation before events are saved or shared.
 
-## 8. Co-Parent Communication Engine
+## Co-Parent Communication Engine
 
-Its purpose is not to generate persuasive attacks against the other parent — it helps users communicate clearly, preserve factual accuracy, and focus on specific parenting issues.
+The goal is not persuasive language aimed against the other parent. It is clear, factually accurate communication focused on a specific parenting issue.
 
-**Workflow:** identify the communication objective → check the parenting agreement for relevant provisions → separate facts from interpretation → generate a neutral draft with a clear request and response deadline → perform a de-escalation review (hostile language, unnecessary criticism, ambiguity) → present the draft for user approval.
+```mermaid
+flowchart LR
+    A[Identify communication\nobjective] --> B[Check agreement for\nrelevant provisions]
+    B --> C[Separate facts from\ninterpretation]
+    C --> D[Generate neutral\ndraft]
+    D --> E[De-escalation\nreview]
+    E --> F[User approval]
+```
 
-The platform should not automatically send messages to co-parents; any external communication requires an appropriately authorized integration and explicit user approval.
+The platform never sends messages to co-parents automatically; any external communication requires an authorized integration and explicit user approval.
 
-## 9. Attorney Preparation and Documentation
+## Attorney Preparation and Documentation
 
-Should not attempt to independently determine legal rights, predict judicial outcomes, or substitute for professional legal advice. Focuses on factual organization, source referencing, and identifying questions requiring legal interpretation.
+This module does not determine legal rights, predict judicial outcomes, or substitute for legal advice. It focuses on factual organization, source referencing, and identifying questions that need legal interpretation.
 
 Example incident-log record:
 
@@ -186,30 +214,35 @@ Example incident-log record:
 }
 ```
 
-An attorney brief may contain: family/case background, current arrangements, relevant agreement excerpts, a chronological summary of reported events, supporting documents, open questions/disputed facts, requested clarifications, and specific questions for legal counsel.
+An attorney brief can include family and case background, current arrangements, relevant agreement excerpts, a chronological summary of reported events, supporting documents, open questions, and specific questions for legal counsel.
 
-## 10. Emotional Support and Coaching Modes
+## Emotional Support and Coaching Modes
 
-Three response styles, all sharing the same safety standards and factual requirements:
+| Mode | Focus |
+|---|---|
+| Supportive | Emotional acknowledgment, encouragement, manageable next steps |
+| Realistic | Facts, available options, and the line between controllable and uncontrollable circumstances |
+| Tough-Love | Direct, constructive feedback and accountability, without shaming |
 
-- **Supportive** — emotional acknowledgment, encouragement, thoughtful reflection, manageable next steps.
-- **Realistic** — facts, available options, practical constraints, and clear distinctions between controllable and uncontrollable circumstances.
-- **Tough-Love** — direct, constructive feedback and accountability without shaming or dismissing concerns.
+All three modes share the same safety standards and factual requirements. Tone personalization never changes the agreement's actual contents or the platform's commitment to child welfare.
 
-Tone personalization must never change the agreement's actual contents or the platform's commitment to child welfare.
+## Conflict Resolution and Negotiation Support
 
-## 11. Conflict Resolution and Negotiation Support
+When an agreement's dispute-resolution process is known, the assistant refers to that process rather than assuming every listed method (counseling, mediation, conciliation, arbitration, court submission) applies.
 
-Where an applicable parenting agreement contains a dispute-resolution process, the assistant should refer to that process when suggesting next steps, using the completed agreement rather than assuming every listed method (counseling, mediation, conciliation, arbitration, court submission) applies.
-
+```mermaid
+flowchart TD
+    A[Disagreement identified] --> B[Check immediate\nsafety concerns]
+    B --> C[Identify relevant\nagreement terms]
+    C --> D[Document points of\ndisagreement]
+    D --> E{Direct discussion\nappropriate?}
+    E -->|Yes| F[Prepare communication]
+    E -->|No| G[Review dispute-resolution\nprovisions]
+    F --> H[Record agreed\nresolution]
+    G --> H
 ```
-Disagreement identified → check immediate safety concerns → identify relevant agreement terms
-  → document specific points of disagreement → determine whether direct discussion is appropriate
-  → review applicable dispute-resolution provisions → prepare communication or professional-review
-    materials → record any agreed resolution
-```
 
-Agreement revisions should distinguish between existing language and suggested replacement language, e.g.:
+Agreement revisions distinguish existing language from suggested replacement language, for example:
 
 ```
 [REMOVE:] Parents will provide proper notification of requested schedule changes.
@@ -221,11 +254,11 @@ remains in effect unless both parents agree to a modification or an applicable o
 provides otherwise.
 ```
 
-## 12. Simulation and Roleplay Module
+## Simulation and Roleplay Module
 
-Supports structured conversation simulations (co-parent discussions, mediation prep, attorney consultations, practice responding to difficult questions). After the simulation, feedback covers clarity, emotional regulation, factual consistency, and whether the response addressed the stated objective. A simulated judge or attorney should be clearly presented as a practice scenario, not an authoritative prediction of a real professional's or court's response.
+Structured conversation simulations help users prepare for co-parent discussions, mediation, attorney consultations, and difficult questions. After a simulation, feedback covers clarity, emotional regulation, factual consistency, and whether the response addressed the stated objective. A simulated judge or attorney is always presented as a practice scenario, not a prediction of a real professional's or court's response.
 
-## 13. Proposed Repository Structure
+## Repository Structure
 
 ```
 custody-life-coach/
@@ -262,13 +295,13 @@ custody-life-coach/
 │   └── bias-mitigation.md
 │
 ├── src/
-│   ├── core/           # orchestrator, context manager, reasoning, response generator
-│   ├── agreement/       # document parser, clause/obligation extractor, issue detector, validator
-│   ├── coaching/        # session manager, emotional support, goal tracker
-│   ├── communication/   # message generator, tone analyzer, conflict resolution
-│   ├── scheduling/      # custody calendar, holiday rotation, calendar export
-│   ├── documentation/   # incident logger, timeline builder, attorney brief
-│   └── security/        # access control, data protection, safety checks
+│   ├── core/           (orchestrator, context manager, reasoning, response generator)
+│   ├── agreement/       (document parser, clause/obligation extractor, issue detector, validator)
+│   ├── coaching/        (session manager, emotional support, goal tracker)
+│   ├── communication/   (message generator, tone analyzer, conflict resolution)
+│   ├── scheduling/      (custody calendar, holiday rotation, calendar export)
+│   ├── documentation/   (incident logger, timeline builder, attorney brief)
+│   └── security/        (access control, data protection, safety checks)
 │
 ├── data/
 │   ├── templates/
@@ -289,13 +322,13 @@ custody-life-coach/
     └── coaching-session.md
 ```
 
-`prompts/` defines conversational behavior and safety requirements. `frameworks/` holds the theoretical and methodological foundations. `src/` contains actual application logic so document parsing, scheduling, communication, and coaching can be developed and tested independently. `data/` provides non-sensitive templates and synthetic sample records. `tests/` protects against missed deadlines, incorrect clause references, or inappropriate disclosure of sensitive information.
+`prompts/` defines conversational behavior and safety requirements. `frameworks/` holds the theoretical and methodological foundations. `src/` contains the application logic so document parsing, scheduling, communication, and coaching can be developed and tested independently. `data/` holds non-sensitive templates and synthetic records. `tests/` guards against missed deadlines, incorrect clause references, and inappropriate disclosure of sensitive information.
 
-## 14. Proposed Technology Stack
+## Technology Stack
 
-**Option A — Customized ChatGPT Assistant**: conversational workflows, uploaded-document analysis, structured prompts, and user-approved outputs. Appropriate for validating the concept before building a separate application.
+**Option A: Customized ChatGPT Assistant**, focused on conversational workflows, uploaded-document analysis, structured prompts, and user-approved outputs. Good for validating the concept before building a separate application.
 
-**Option B — Standalone Web Application**
+**Option B: Standalone Web Application**
 
 | Component | Suggested technology |
 |---|---|
@@ -308,40 +341,40 @@ custody-life-coach/
 | Calendar | iCalendar generation |
 | Authentication | Secure user authentication and authorization |
 
-A user-facing custody application should not be deployed publicly without addressing sensitive-data storage, account security, user consent, and access controls.
+A user-facing custody application should never be deployed publicly without addressing sensitive-data storage, account security, user consent, and access controls.
 
-## 15. Data Model
+## Data Model
 
 | Entity | Fields |
 |---|---|
-| User Profile | User ID · Preferences · Access permissions |
-| Family Context | Family ID · Parenting arrangements · Relevant circumstances |
-| Agreements | Document ID · Version · Clauses · Source references |
-| Events | Exchange dates · Holidays · Deadlines · Changes |
-| Incident Records | Dates · Reported facts · Supporting evidence |
-| Generated Materials | Draft messages · Summaries · Checklists |
+| User Profile | User ID, preferences, access permissions |
+| Family Context | Family ID, parenting arrangements, relevant circumstances |
+| Agreements | Document ID, version, clauses, source references |
+| Events | Exchange dates, holidays, deadlines, changes |
+| Incident Records | Dates, reported facts, supporting evidence |
+| Generated Materials | Draft messages, summaries, checklists |
 
-Each agreement should have a unique document identifier and version history; if a user uploads a revised agreement, the system should not silently overwrite the original, but retain version information and let the user confirm which document currently governs. A production application must enforce strict separation between user accounts and family records.
+Each agreement keeps a unique document identifier and version history. If a user uploads a revised agreement, the system retains version information and lets the user confirm which document currently governs, rather than silently overwriting the original. A production application must enforce strict separation between user accounts and family records.
 
-## 16. Privacy, Security, and Safety
+## Privacy, Security, and Safety
 
-Custody-related information is highly sensitive — it may include children's identities, addresses, school details, family communications, medical information, court records, and allegations about other individuals.
+Custody-related information is highly sensitive: children's identities, addresses, school details, family communications, medical information, court records, and allegations about other individuals may all be involved.
 
-- **Privacy by design** — collect only necessary information; support redaction of personal identifiers before sharing.
-- **Controlled access** — authentication/authorization for private records; encryption and access controls for stored and transmitted information.
-- **Source integrity** — preserve original documents and distinguish them from AI-generated interpretations.
-- **User approval** — explicit authorization before sending external communications, sharing records, or modifying calendars.
-- **Child-centered safeguards** — never coach users to manipulate children, fabricate evidence, violate agreements, or escalate conflict.
+- **Privacy by design**: collect only necessary information; support redaction of personal identifiers before sharing.
+- **Controlled access**: authentication and authorization for private records; encryption and access controls for stored and transmitted data.
+- **Source integrity**: preserve original documents, distinct from AI-generated interpretations.
+- **User approval**: explicit authorization before sending communications, sharing records, or modifying calendars.
+- **Child-centered safeguards**: never coach users to manipulate children, fabricate evidence, violate agreements, or escalate conflict.
 
-When a user reports an emergency, credible threats, or imminent harm, the assistant should prioritize appropriate safety resources rather than continue a routine coaching workflow.
+When a user reports an emergency, credible threats, or imminent harm, the assistant prioritizes appropriate safety resources over a routine coaching workflow.
 
-## 17. Testing and Quality Assurance
+## Testing and Quality Assurance
 
 | Test category | Expected behavior |
 |---|---|
-| Agreement parsing | Extract clause headings/text without fabricating missing provisions |
+| Agreement parsing | Extract clause headings and text without fabricating missing provisions |
 | Source referencing | Link findings to the correct agreement section and page number |
-| Missing information | Identify blank dates, absent clauses, unspecified responsibilities |
+| Missing information | Identify blank dates, absent clauses, and unspecified responsibilities |
 | Calendar generation | Calculate dates and holiday rotations according to confirmed rules |
 | Conflict handling | Recognize contradictory document versions or overlapping schedules |
 | Communication | Generate neutral drafts without unsupported allegations |
@@ -349,23 +382,23 @@ When a user reports an emergency, credible threats, or imminent harm, the assist
 | Safety | Recognize situations requiring emergency or professional intervention |
 | Coaching | Maintain factual standards across all response styles |
 
-## 18. Development Roadmap
+## Development Roadmap
 
-1. **Foundation** — core AI coaching assistant: system instructions, coaching modes, response standards, contextual reasoning framework, basic conversation workflows.
-2. **Document Intelligence** — parenting agreement analysis: ingestion, clause identification, source-linked summaries, obligation extraction.
-3. **Productivity** — scheduling & documentation: recurring custody calendars, holiday calculations, notice tracking, incident logging, attorney-prep materials.
-4. **Standalone Platform** — secure application & integrations: dedicated accounts, private document storage, secure integrations, structured UI.
-5. **Validation & Improvement** — evaluate extraction accuracy, improve usability, strengthen accessibility, expand safety/reliability tests.
+1. **Foundation**: core AI coaching assistant, system instructions, coaching modes, response standards, basic workflows.
+2. **Document Intelligence**: parenting agreement analysis, ingestion, clause identification, source-linked summaries.
+3. **Productivity**: scheduling and documentation, recurring calendars, holiday calculations, notice tracking, incident logging.
+4. **Standalone Platform**: secure application and integrations, dedicated accounts, private document storage, structured UI.
+5. **Validation and Improvement**: evaluate extraction accuracy, improve usability, strengthen accessibility, expand safety tests.
 
-## 19. Project Scope and Limitations
+## Project Scope and Limitations
 
-The current assistant can provide conversational support, analyze available documents, draft messages, identify potential issues, and produce structured planning materials. A dedicated database, automatic persistent case history, continuous agreement monitoring, real-time legal research, automated calendar synchronization, and external message delivery are separate capabilities requiring appropriate infrastructure — the system should not claim these are active unless implemented and verified.
+The current assistant provides conversational support, analyzes available documents, drafts messages, identifies potential issues, and produces structured planning materials. A dedicated database, automatic persistent case history, continuous agreement monitoring, real-time legal research, automated calendar synchronization, and external message delivery are separate capabilities requiring their own infrastructure; the system should never claim these are active unless they are implemented and verified.
 
-The CoT–CoR framework is a methodology for organizing information and generating responses; it does not establish judicial authority, guaranteed analytical accuracy, or the ability to predict a specific custody outcome.
+The CoT-CoR framework is a methodology for organizing information and generating responses. It does not establish judicial authority, guaranteed analytical accuracy, or the ability to predict a specific custody outcome.
 
 ## Mission Statement
 
-Custody Life Coach exists to help parents navigate custody arrangements, divorce, and family transitions with greater clarity, emotional resilience, and practical organization — combining parenting agreement intelligence, structured reasoning, communication support, and child-centered coaching. Its purpose is not to replace professional judgment or decide what a parent should fight for, but to provide the information, structure, and tools that help parents make their own informed decisions while protecting their children's well-being and maintaining their personal dignity.
+Custody Life Coach exists to help parents navigate custody arrangements, divorce, and family transitions with greater clarity, emotional resilience, and practical organization, combining parenting agreement intelligence, structured reasoning, communication support, and child-centered coaching. Its purpose is not to replace professional judgment or decide what a parent should fight for. It is to provide the information, structure, and tools that help parents make their own informed decisions while protecting their children's well-being and maintaining their personal dignity.
 
 ## License
 

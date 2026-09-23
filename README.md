@@ -420,4 +420,8 @@ This project is **proprietary** and **All Rights Reserved**.
 [![GitHub Stars](https://img.shields.io/github/stars/shadowdevnotreal/custody-life-coach?style=social)](https://github.com/shadowdevnotreal/custody-life-coach/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/shadowdevnotreal/custody-life-coach?style=social)](https://github.com/shadowdevnotreal/custody-life-coach/network)
 
+<br/>
+
+<img src="assets/diatasso-mark.svg" alt="DIATASSO LLC service mark" width="72"/>
+
 </div>

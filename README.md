@@ -419,6 +419,10 @@ This project is **proprietary** and **All Rights Reserved**.
 
 *AI-powered custody and co-parenting support platform*
 
+**Created and maintained by DIATASSO LLC**
+
+DIATASSO is a Tennessee-registered service mark, TM062328. The company mark and brand assets are not covered by this repository's license. See [Branding](BRANDING.md) and [Trademarks](TRADEMARKS.md).
+
 ---
 
 ### ⭐ Star this repository if Custody Life Coach interested you!
@@ -429,11 +433,5 @@ This project is **proprietary** and **All Rights Reserved**.
 **Made with 💜 by the DIATASSO Team**
 
 <a href="https://www.buymeacoffee.com/diatasso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
----
-
-**Created and maintained by DIATASSO LLC**
-
-DIATASSO is a Tennessee-registered service mark, TM062328. The company mark and brand assets are not covered by this repository's license. See [Branding](BRANDING.md) and [Trademarks](TRADEMARKS.md).
 
 </div>
